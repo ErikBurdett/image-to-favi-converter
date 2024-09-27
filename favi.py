@@ -15,7 +15,7 @@ formats = ['jpg', 'png', 'ico']
 
 # Loop through all images in the input directory
 for filename in os.listdir(input_directory):
-    if filename.lower().endswith((".png", ".jpg", ".webp")):  # Add .webp support
+    if filename.lower().endswith((".png", ".jpg", ".webp")):
         img_path = os.path.join(input_directory, filename)
         with Image.open(img_path) as img:
             img_basename = os.path.splitext(filename)[0]
@@ -40,7 +40,7 @@ for filename in os.listdir(input_directory):
                     
                     # Save the image in the new size and format
                     if file_format == 'jpg':
-                        resized_img.save(output_path, format='JPEG')  # Correct format for JPG
+                        resized_img.save(output_path, format='JPEG')
                     elif file_format == 'ico':
                         resized_img.save(output_path, format='ICO')
                     else:
