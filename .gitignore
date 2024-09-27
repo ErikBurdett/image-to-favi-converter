@@ -1,0 +1,47 @@
+# Byte-compiled / optimized / compiled Python files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+
+# Python egg files
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Cache files
+*.cache
+*.log
+
+# Output directories (for images)
+conversion/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE or editor settings
+.vscode/
+.idea/
+
+# PIP generated requirements files
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
+
+# Coverage reports
+.coverage
+*.cover
+*.py,cover
+
+# Unit test / pytest cache files
+.tox/
+.nox/
+.pytest_cache/
+coverage.xml
